@@ -1,0 +1,9 @@
+metadata:
+  name: china-internet-compliance
+  display_name: 中国互联网全场景合规评审
+  version: "2.0.0"
+  description: "面向中国互联网公司全场景的合规评审工作流，覆盖产品、数据、AI、内容、广告、交易、游戏、企业服务、IP、开源、供应商与监管响应。"
+  brand_color: "#2563EB"
+  default_prompt: "请使用中国互联网全场景合规评审 skill，先识别业务场景，再输出风险等级、主要风险、法律依据、整改建议、上线 gate 和评审结论。"
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,212 @@
+{
+  "quick_triage": {
+    "title": "快速分诊",
+    "scenario": "任意不完整需求、会议现场口头需求、需要先判断审查路径的事项",
+    "expected_output": "主场景、交叉场景、P0/P1信号、需补材料、下一步应调用的专项命令",
+    "required_sections": [
+      "facts",
+      "scenario_classification",
+      "risk_level_gate",
+      "key_risks",
+      "evidence_gaps",
+      "remediation",
+      "copyable_conclusion"
+    ]
+  },
+  "launch_review": {
+    "title": "产品上线评审",
+    "scenario": "新功能、PRD、技术方案、灰度、A/B测试、上线gate",
+    "expected_output": "上线风险等级、跨场景风险、整改清单、上线/灰度/阻断结论",
+    "required_sections": [
+      "facts",
+      "scenario_classification",
+      "risk_level_gate",
+      "key_risks",
+      "evidence_gaps",
+      "remediation",
+      "copyable_conclusion"
+    ]
+  },
+  "data_pia": {
+    "title": "数据隐私/PIA",
+    "scenario": "个人信息、敏感个人信息、共享、委托、跨境、用户权利",
+    "expected_output": "PIA触发、合法性基础、单独同意、出境路径、第三方清单",
+    "required_sections": [
+      "facts",
+      "scenario_classification",
+      "risk_level_gate",
+      "key_risks",
+      "evidence_gaps",
+      "remediation",
+      "copyable_conclusion"
+    ]
+  },
+  "app_sdk_review": {
+    "title": "App/SDK安全评审",
+    "scenario": "App权限、SDK接入、设备标识、剪贴板、安装列表、崩溃日志",
+    "expected_output": "权限必要性、告知同意、SDK清单、数据共享、安全证据",
+    "required_sections": [
+      "facts",
+      "scenario_classification",
+      "risk_level_gate",
+      "key_risks",
+      "evidence_gaps",
+      "remediation",
+      "copyable_conclusion"
+    ]
+  },
+  "ai_algorithm_review": {
+    "title": "AI/算法/AIGC评审",
+    "scenario": "推荐算法、生成式AI、深度合成、自动化决策、Agent/RAG",
+    "expected_output": "备案/评估/标识、数据来源、模型供应商、人工复核、日志",
+    "required_sections": [
+      "facts",
+      "scenario_classification",
+      "risk_level_gate",
+      "key_risks",
+      "evidence_gaps",
+      "remediation",
+      "copyable_conclusion"
+    ]
+  },
+  "content_governance_review": {
+    "title": "内容治理评审",
+    "scenario": "UGC、评论、直播、群聊、公众账号、举报申诉",
+    "expected_output": "审核机制、违法内容治理、实名/认证、举报申诉、未成年人保护",
+    "required_sections": [
+      "facts",
+      "scenario_classification",
+      "risk_level_gate",
+      "key_risks",
+      "evidence_gaps",
+      "remediation",
+      "copyable_conclusion"
+    ]
+  },
+  "ad_marketing_review": {
+    "title": "广告营销评审",
+    "scenario": "广告、KOL、Push/SMS、抽奖、优惠券、会员权益、直播带货",
+    "expected_output": "广告标识、特殊行业、概率/规则公示、退订、文案证据",
+    "required_sections": [
+      "facts",
+      "scenario_classification",
+      "risk_level_gate",
+      "key_risks",
+      "evidence_gaps",
+      "remediation",
+      "copyable_conclusion"
+    ]
+  },
+  "game_review": {
+    "title": "游戏/虚拟资产评审",
+    "scenario": "小游戏、抽卡、盲盒、虚拟币、打赏、未成年人、防沉迷",
+    "expected_output": "概率公示、虚拟资产规则、防沉迷、赌博/非法金融风险",
+    "required_sections": [
+      "facts",
+      "scenario_classification",
+      "risk_level_gate",
+      "key_risks",
+      "evidence_gaps",
+      "remediation",
+      "copyable_conclusion"
+    ]
+  },
+  "payment_review": {
+    "title": "支付/金融相邻评审",
+    "scenario": "分账、充值、提现、余额、金融导流、信用评分、跨境支付",
+    "expected_output": "持牌主体、资金流、退款、金融广告、适当性和风险提示",
+    "required_sections": [
+      "facts",
+      "scenario_classification",
+      "risk_level_gate",
+      "key_risks",
+      "evidence_gaps",
+      "remediation",
+      "copyable_conclusion"
+    ]
+  },
+  "oss_review": {
+    "title": "开源/IP评审",
+    "scenario": "开源组件、许可证、素材、竞品复用、公开仓库、商业秘密",
+    "expected_output": "使用方式、许可证义务、授权证明、NOTICE/LICENSE、泄密扫描",
+    "required_sections": [
+      "facts",
+      "scenario_classification",
+      "risk_level_gate",
+      "key_risks",
+      "evidence_gaps",
+      "remediation",
+      "copyable_conclusion"
+    ]
+  },
+  "vendor_review": {
+    "title": "供应商/合同评审",
+    "scenario": "SDK、API、模型、云服务、外包、DPA、SLA、合同条款",
+    "expected_output": "数据角色、转委托、跨境、安全、IP、责任上限、退出删除",
+    "required_sections": [
+      "facts",
+      "scenario_classification",
+      "risk_level_gate",
+      "key_risks",
+      "evidence_gaps",
+      "remediation",
+      "copyable_conclusion"
+    ]
+  },
+  "regulatory_response": {
+    "title": "监管/公安/诉讼响应",
+    "scenario": "调证函、监管问询、行政检查、诉讼证据、内部调查",
+    "expected_output": "范围核验、最小必要、脱敏、证据目录、审批和交付留痕",
+    "required_sections": [
+      "facts",
+      "scenario_classification",
+      "risk_level_gate",
+      "key_risks",
+      "evidence_gaps",
+      "remediation",
+      "copyable_conclusion"
+    ]
+  },
+  "policy_diff": {
+    "title": "政策差异/规则更新",
+    "scenario": "新法规、新政策、内部制度变更、平台规则更新",
+    "expected_output": "变化点、影响场景、需改系统/协议/流程、优先级",
+    "required_sections": [
+      "facts",
+      "scenario_classification",
+      "risk_level_gate",
+      "key_risks",
+      "evidence_gaps",
+      "remediation",
+      "copyable_conclusion"
+    ]
+  },
+  "compliance_register": {
+    "title": "合规台账生成",
+    "scenario": "多个风险项、整改跟踪、上线gate、审计留痕",
+    "expected_output": "风险编号、责任方、证据、关闭标准、状态跟踪",
+    "required_sections": [
+      "facts",
+      "scenario_classification",
+      "risk_level_gate",
+      "key_risks",
+      "evidence_gaps",
+      "remediation",
+      "copyable_conclusion"
+    ]
+  },
+  "cold_start_interview": {
+    "title": "公司化配置访谈",
+    "scenario": "首次接入、公司风险偏好、审批流程、业务画像配置",
+    "expected_output": "生成profile、风险校准、升级矩阵、审批流程和数据分类",
+    "required_sections": [
+      "facts",
+      "scenario_classification",
+      "risk_level_gate",
+      "key_risks",
+      "evidence_gaps",
+      "remediation",
+      "copyable_conclusion"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+# Example Codex configuration for China Internet Compliance v4.0
+# Copy and adapt to your local environment if needed.
+
+[skills]
+prefer_repo_scoped = true
+
+[china_internet_compliance]
+default_language = "zh-CN"
+default_jurisdiction = "Mainland China"
+use_company_profile_if_present = true
+require_citation_status_for_high_risk = true
