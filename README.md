@@ -179,9 +179,9 @@ Expected result:
 
 ## Version Notes
 
-Current package version: `V1.0.1`.
+Current package version: `V1.0.2`.
 
-`V1.0.1` is a public release polish version. `V1.0.0` was the initial public release. The current package includes:
+`V1.0.2` is the current patch release. `V1.0.1` was the public release polish version, and `V1.0.0` was the initial public release. The current package includes:
 
 - Specialist deepening: each specialist Skill includes judgment trees, required inputs, P0/P1 triggers and evidence requirements.
 - Command execution: each command has a stable workflow contract and quality threshold.
@@ -202,7 +202,8 @@ See `CHANGELOG.md` for details.
 - `SOURCE_MAINTENANCE.md`：法规、监管规则、标准和平台规则的维护机制
 - `docs/architecture.md`：Skill 套件架构、路由模型和评测模型
 - `docs/github-actions/validate.yml`：可复制到 `.github/workflows/` 的 GitHub Actions 校验模板
-- `docs/releases/V1.0.1.md`：当前版本 Release Notes
+- `docs/releases/V1.0.2.md`：当前版本 Release Notes
+- `docs/releases/V1.0.1.md`：发布打磨版本 Release Notes
 - `docs/releases/V1.0.0.md`：首个公开版本 Release Notes
 
 ## Utility Scripts

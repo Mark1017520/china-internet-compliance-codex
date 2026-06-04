@@ -1,7 +1,7 @@
 ---
 name: china-payment-fintech-adjacent
 description: Use for wallets, balances, settlement, split payment, withdrawals, cash-like points, financial lead generation, credit scoring, lending/insurance display, payment channels.
-version: V1.0.1
+version: V1.0.2
 ---
 
 # 中国支付与金融相邻合规专项

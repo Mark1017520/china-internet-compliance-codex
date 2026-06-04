@@ -1,4 +1,4 @@
-# AGENTS.md — China Internet Full-Scenario Compliance Workspace V1.0.1
+# AGENTS.md — China Internet Full-Scenario Compliance Workspace V1.0.2
 
 ## Repository role
 
@@ -18,7 +18,7 @@ Use the main router skill `china-internet-compliance` for cross-domain review. U
 - `china-vendor-contract` — vendors, SDK/API/model/cloud contracts, DPA, SLA, audit rights, exit.
 - `china-regulatory-response` — regulator inquiry, police evidence request, litigation/arbitration evidence, internal factual statement.
 
-## V1.0.1 operating model
+## V1.0.2 operating model
 
 Codex should treat this repository as a compliance operating system, not a single prompt:
 
@@ -67,7 +67,7 @@ For legal/regulatory basis, distinguish:
 - Do not treat model output as a substitute for licensed legal advice.
 - Do not invent legal provisions, case names, regulatory approvals, filing requirements, or official interpretations.
 
-## V1.0.1 package components
+## V1.0.2 package components
 
 - `commands/`: stable command recipes for launch review, PIA, AI review, OSS review, vendor review, regulatory response and cold-start interview.
 - `profiles/`: company compliance profile templates and risk calibration.

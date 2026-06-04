@@ -1,7 +1,7 @@
 ---
 name: china-platform-transaction
 description: Use for e-commerce, marketplace, local services, merchants, ratings, refunds, platform rules, consumer protection, transaction governance.
-version: V1.0.1
+version: V1.0.2
 ---
 
 # 中国网络交易与平台责任专项

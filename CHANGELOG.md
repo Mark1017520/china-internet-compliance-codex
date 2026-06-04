@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## V1.0.2 — Release Tag Alignment
+
+- Bumped active package version markers to `V1.0.2`.
+- Added `docs/releases/V1.0.2.md`.
+- Kept `V1.0.1` as historical release notes while tagging the latest release-fix commit as `V1.0.2`.
+
 ## V1.0.1 — Public Release Polish
 
 - Rewrote all 15 command workflows with scenario-specific inputs, execution steps, output formats and quality gates.

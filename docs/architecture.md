@@ -89,7 +89,7 @@ The eval pack is designed to make the Skill suite maintainable:
 
 ## Versioning
 
-The public version is `V1.0.1`. Future changes should distinguish:
+The public version is `V1.0.2`. Future changes should distinguish:
 
 - Rule/source updates
 - Skill behavior changes

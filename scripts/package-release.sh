@@ -3,7 +3,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
-VERSION="${1:-V1.0.1}"
+VERSION="${1:-V1.0.2}"
 DIST_DIR="${REPO_ROOT}/dist"
 PACKAGE_NAME="china-internet-compliance-codex-${VERSION}"
 PACKAGE_PATH="${DIST_DIR}/${PACKAGE_NAME}.zip"

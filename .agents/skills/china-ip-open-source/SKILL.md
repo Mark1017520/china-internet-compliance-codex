@@ -1,7 +1,7 @@
 ---
 name: china-ip-open-source
 description: Use for copyright, trademark, patent, materials, fonts, competitor copying, open-source licenses, SDK/source code, scripts, prompts/skills, trade secrets, OSS distribution obligations.
-version: V1.0.1
+version: V1.0.2
 ---
 
 # 中国知识产权、开源与商业秘密专项
