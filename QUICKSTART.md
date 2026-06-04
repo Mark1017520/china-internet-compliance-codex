@@ -5,8 +5,8 @@
 ## 方式一：直接在本仓库使用
 
 ```bash
-git clone https://github.com/Mark1017520/china-internet-compliance-codex.git
-cd china-internet-compliance-codex
+git clone https://github.com/Mark1017520/china-internet-compliance-codex-skills.git
+cd china-internet-compliance-codex-skills
 codex
 ```
 

@@ -1,7 +1,7 @@
 ---
 name: china-content-governance
 description: Use for UGC, community, comments, livestream, audio/video, public accounts, messaging, content moderation, reporting, account governance and minors content protection.
-version: V1.0.2
+version: V1.0.3
 ---
 
 # 中国内容与平台治理专项

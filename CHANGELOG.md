@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## V1.0.3 — Project Naming Alignment
+
+- Renamed the public project title to `Codex Skills for China Internet Compliance`.
+- Added the Chinese project title `中国互联网合规审查 Codex 技能包`.
+- Updated the project slug and package name to `china-internet-compliance-codex-skills`.
+- Bumped active package version markers to `V1.0.3`.
+- Added `docs/releases/V1.0.3.md`.
+
 ## V1.0.2 — Release Tag Alignment
 
 - Bumped active package version markers to `V1.0.2`.

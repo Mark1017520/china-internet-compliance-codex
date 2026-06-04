@@ -1,4 +1,6 @@
-# China Internet Compliance Codex
+# Codex Skills for China Internet Compliance
+
+中国互联网合规审查 Codex 技能包
 
 面向中国互联网业务场景的 Codex repo-scoped Skill 套件，用于辅助法务、隐私合规、产品、研发、安全、运营和商业化团队进行结构化合规初审、上线 gate 判断、风险清单整理和评审底稿生成。
 
@@ -19,8 +21,8 @@
 第一次使用请从 `QUICKSTART.md` 开始。最短路径：
 
 ```bash
-git clone https://github.com/Mark1017520/china-internet-compliance-codex.git
-cd china-internet-compliance-codex
+git clone https://github.com/Mark1017520/china-internet-compliance-codex-skills.git
+cd china-internet-compliance-codex-skills
 codex
 ```
 
@@ -179,9 +181,9 @@ Expected result:
 
 ## Version Notes
 
-Current package version: `V1.0.2`.
+Current package version: `V1.0.3`.
 
-`V1.0.2` is the current patch release. `V1.0.1` was the public release polish version, and `V1.0.0` was the initial public release. The current package includes:
+`V1.0.3` is the project naming and slug alignment release. `V1.0.2` was the release tag alignment version, `V1.0.1` was the public release polish version, and `V1.0.0` was the initial public release. The current package includes:
 
 - Specialist deepening: each specialist Skill includes judgment trees, required inputs, P0/P1 triggers and evidence requirements.
 - Command execution: each command has a stable workflow contract and quality threshold.
@@ -202,7 +204,8 @@ See `CHANGELOG.md` for details.
 - `SOURCE_MAINTENANCE.md`：法规、监管规则、标准和平台规则的维护机制
 - `docs/architecture.md`：Skill 套件架构、路由模型和评测模型
 - `docs/github-actions/validate.yml`：可复制到 `.github/workflows/` 的 GitHub Actions 校验模板
-- `docs/releases/V1.0.2.md`：当前版本 Release Notes
+- `docs/releases/V1.0.3.md`：当前版本 Release Notes
+- `docs/releases/V1.0.2.md`：发布 tag 对齐版本 Release Notes
 - `docs/releases/V1.0.1.md`：发布打磨版本 Release Notes
 - `docs/releases/V1.0.0.md`：首个公开版本 Release Notes
 

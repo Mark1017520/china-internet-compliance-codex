@@ -1,6 +1,6 @@
 # 中国互联网合规规则索引
 
-> V1.0.2 使用提示：本文件是规则索引；涉及具体法条义务时应同时调用 `ARTICLE_LEVEL_RULES.md`，涉及高监管垂直行业时应调用 `VERTICAL_INDUSTRY_PLAYBOOKS.md`，涉及法规时效时应调用 `UPDATE_POLICY.md`。
+> V1.0.3 使用提示：本文件是规则索引；涉及具体法条义务时应同时调用 `ARTICLE_LEVEL_RULES.md`，涉及高监管垂直行业时应调用 `VERTICAL_INDUSTRY_PLAYBOOKS.md`，涉及法规时效时应调用 `UPDATE_POLICY.md`。
 
 > 使用说明：本文件是 Codex 的合规规则索引，不是完整法律文本。涉及具体法条、备案、行政许可、数据出境、算法/AIGC、金融/游戏/医疗/教育等高变化问题时，应核对最新版官方文件。
 

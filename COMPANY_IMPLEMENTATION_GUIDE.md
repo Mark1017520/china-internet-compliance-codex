@@ -1,6 +1,6 @@
 # Company Implementation Guide
 
-本指南说明如何把通用的 China Internet Compliance Codex 变成企业内部可用的合规审查助手。
+本指南说明如何把通用的 Codex Skills for China Internet Compliance 变成企业内部可用的合规审查助手。
 
 ## 目标状态
 

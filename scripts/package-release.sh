@@ -3,9 +3,9 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
-VERSION="${1:-V1.0.2}"
+VERSION="${1:-V1.0.3}"
 DIST_DIR="${REPO_ROOT}/dist"
-PACKAGE_NAME="china-internet-compliance-codex-${VERSION}"
+PACKAGE_NAME="china-internet-compliance-codex-skills-${VERSION}"
 PACKAGE_PATH="${DIST_DIR}/${PACKAGE_NAME}.zip"
 
 mkdir -p "${DIST_DIR}"

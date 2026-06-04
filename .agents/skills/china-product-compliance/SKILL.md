@@ -1,7 +1,7 @@
 ---
 name: china-product-compliance
 description: Use for PRD review, feature launch, product change, grey release, launch gate, cross-functional compliance triage for China-facing internet services.
-version: V1.0.2
+version: V1.0.3
 ---
 
 # 中国产品上线合规专项

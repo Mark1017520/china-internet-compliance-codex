@@ -7,7 +7,7 @@ TARGET_DIR="${HOME}/.agents/skills"
 
 if [[ ! -d "${REPO_ROOT}/.agents/skills" ]]; then
   echo "Cannot find ${REPO_ROOT}/.agents/skills" >&2
-  echo "Run this script from a full clone of china-internet-compliance-codex." >&2
+  echo "Run this script from a full clone of china-internet-compliance-codex-skills." >&2
   exit 1
 fi
 
