@@ -2,7 +2,7 @@
 
 ## 适用 Skill
 
-`$china-advertising-marketing` 或 `/china-compliance:ad-marketing-review`
+`$china-advertising-marketing` 或 `/china-compliance:ad_marketing_review`
 
 ## 提示词
 

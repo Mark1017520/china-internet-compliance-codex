@@ -2,7 +2,7 @@
 
 ## 适用 Skill
 
-`$china-data-privacy-compliance` 或 `/china-compliance:app-sdk-review`
+`$china-data-privacy-compliance` 或 `/china-compliance:app_sdk_review`
 
 ## 提示词
 

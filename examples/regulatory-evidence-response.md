@@ -2,7 +2,7 @@
 
 ## 适用 Skill
 
-`$china-regulatory-response` 或 `/china-compliance:regulatory-response`
+`$china-regulatory-response` 或 `/china-compliance:regulatory_response`
 
 ## 提示词
 

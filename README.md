@@ -146,13 +146,13 @@ $china-ip-open-source 请分析这些依赖和开源许可证在 SaaS、Docker �
 Command-style examples:
 
 ```text
-/china-compliance:quick-triage
-/china-compliance:launch-review
-/china-compliance:data-pia
-/china-compliance:ai-algorithm-review
-/china-compliance:oss-review
-/china-compliance:regulatory-response
-/china-compliance:cold-start-interview
+/china-compliance:quick_triage
+/china-compliance:launch_review
+/china-compliance:data_pia
+/china-compliance:ai_algorithm_review
+/china-compliance:oss_review
+/china-compliance:regulatory_response
+/china-compliance:cold_start_interview
 ```
 
 ## Recommended Workflow

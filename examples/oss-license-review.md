@@ -2,7 +2,7 @@
 
 ## 适用 Skill
 
-`$china-ip-open-source` 或 `/china-compliance:oss-review`
+`$china-ip-open-source` 或 `/china-compliance:oss_review`
 
 ## 提示词
 

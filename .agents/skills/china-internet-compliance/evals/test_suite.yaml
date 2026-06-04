@@ -9,32 +9,32 @@ minimum_pass_score: 80
 high_risk_minimum_score: 90
 sample_cases:
   - id: TC-001
-    command: /china-compliance:app-sdk-review
+    command: /china-compliance:app_sdk_review
     expected_dimensions: [facts, personal_info, consent, evidence, gate]
   - id: TC-011
-    command: /china-compliance:data-pia
+    command: /china-compliance:data_pia
     expected_dimensions: [cross_border, personal_info, vendor, citations, gate]
   - id: TC-021
-    command: /china-compliance:ai-algorithm-review
+    command: /china-compliance:ai_algorithm_review
     expected_dimensions: [algorithm, filing, content_governance, citations, gate]
   - id: TC-024
-    command: /china-compliance:ai-algorithm-review
+    command: /china-compliance:ai_algorithm_review
     expected_dimensions: [deep_synthesis, voice_clone, consent, label, content_review]
   - id: TC-041
-    command: /china-compliance:ad-marketing-review
+    command: /china-compliance:ad_marketing_review
     expected_dimensions: [ads, pop_up, user_rights, evidence]
   - id: TC-061
-    command: /china-compliance:game-review
+    command: /china-compliance:game_review
     expected_dimensions: [probability, virtual_assets, minors, payment]
   - id: TC-071
-    command: /china-compliance:payment-review
+    command: /china-compliance:payment_review
     expected_dimensions: [fund_flow, licensed_entity, settlement, contract]
   - id: TC-083
-    command: /china-compliance:oss-review
+    command: /china-compliance:oss_review
     expected_dimensions: [competitor_copy, copyright, docs, clean_room]
   - id: TC-101
-    command: /china-compliance:regulatory-response
+    command: /china-compliance:regulatory_response
     expected_dimensions: [scope, minimum_necessary, approval, evidence_chain]
   - id: TC-120
-    command: /china-compliance:quick-triage
+    command: /china-compliance:quick_triage
     expected_dimensions: [vertical_industry, high_regulation, gate]

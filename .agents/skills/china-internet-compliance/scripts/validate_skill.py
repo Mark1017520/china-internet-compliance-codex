@@ -72,9 +72,14 @@ if exp_path.exists():
         errors.append('expected_issues.json must contain >=120 cases')
 
 # Golden examples
-ge = list((ROOT/'golden_examples').glob('*.md')) if (ROOT/'golden_examples').exists() else []
+ge_dir = ROOT/'golden_examples'
+ge_all = list(ge_dir.glob('*.md')) if ge_dir.exists() else []
+ge_standard = ge_dir/'GOLDEN_EXAMPLE_STANDARD.md'
+ge = [p for p in ge_all if p.name != 'GOLDEN_EXAMPLE_STANDARD.md']
 if len(ge) < 30:
     errors.append(f'Expected >=30 golden examples, found {len(ge)}')
+if not ge_standard.exists():
+    errors.append('Missing golden example standard: GOLDEN_EXAMPLE_STANDARD.md')
 
 # Command input contracts
 cic = ROOT/'commands/COMMAND_INPUT_CONTRACTS.json'
@@ -90,7 +95,7 @@ if errors:
     sys.exit(1)
 print('[OK] china-internet-compliance skill package is valid.')
 print(f'[OK] Found {case_count} full-scenario test cases.')
-print(f'[OK] Found {len(ge)} golden examples.')
+print(f'[OK] Found {len(ge)} golden examples and {1 if ge_standard.exists() else 0} golden example standard.')
 print(f'[OK] Found {len(command_files)} executable command files.')
 print(f'[OK] Found {len(specialists)} deepened specialist skills.')
-print('[OK] V1.0.0 enhancement files are present.')
+print('[OK] V1.0.0/V1.0.1 enhancement files are present.')
