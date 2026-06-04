@@ -14,14 +14,49 @@
 - 连接器规范：法规库、内部制度、PRD、SCA/SBOM、SDK 清单、数据地图、模型登记台账、合同库
 - 评测体系：测试用例、rubric、expected issues 和输出评分脚本
 
+## Quick Start
+
+第一次使用请从 `QUICKSTART.md` 开始。最短路径：
+
+```bash
+git clone https://github.com/Mark1017520/china-internet-compliance-codex.git
+cd china-internet-compliance-codex
+codex
+```
+
+在 Codex 中输入：
+
+```text
+$china-internet-compliance 请审查这个功能是否可以上线：
+功能名称：AI 客服助手
+业务类型：企业 SaaS 客服
+上线地区：中国大陆
+用户对象：企业商家、消费者
+功能描述：根据商家知识库和订单状态自动回复售后问题
+涉及数据：订单号、物流状态、用户咨询内容
+第三方 SDK/API/模型：第三方大模型 API
+是否涉及 AI/算法/AIGC：是
+是否涉及 UGC/直播/评论/社交：否
+是否涉及广告/营销/付费/交易：涉及售后交易信息
+是否涉及未成年人：不确定
+```
+
 ## Repository Structure
 
 ```text
 .
 ├── AGENTS.md
 ├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── LEGAL_DISCLAIMER.md
 ├── LICENSE
+├── QUICKSTART.md
 ├── README.md
+├── SECURITY.md
+├── examples/
+├── docs/
+├── scripts/
+├── .github/
 ├── .codex/
 │   └── config.example.toml
 └── .agents/
@@ -68,6 +103,12 @@ Then start Codex from that repository root. Codex can read `AGENTS.md` and the r
 ```bash
 mkdir -p ~/.agents/skills
 cp -R .agents/skills/china-* ~/.agents/skills/
+```
+
+Or use the helper script:
+
+```bash
+./scripts/install-global.sh
 ```
 
 ## Usage
@@ -139,6 +180,15 @@ Expected result:
 - v4.3 evaluation pack: expected issues for 120 test cases, legal correctness rubric, benchmark and output evaluator.
 
 See `CHANGELOG.md` for details.
+
+## Project Docs
+
+- `QUICKSTART.md`：下载、安装、首次调用和常见问题
+- `examples/`：可复制的典型场景提示词
+- `CONTRIBUTING.md`：贡献规则、模板、测试用例和法规来源的流程
+- `SECURITY.md`：敏感信息和安全问题报告规则
+- `LEGAL_DISCLAIMER.md`：法律意见边界、来源核验和数据处理提醒
+- `docs/github-actions/validate.yml`：可复制到 `.github/workflows/` 的 GitHub Actions 校验模板
 
 ## License
 

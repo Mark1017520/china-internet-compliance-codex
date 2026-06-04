@@ -1,0 +1,46 @@
+name: New scenario request
+description: Request coverage for a new internet business or compliance scenario.
+title: "[Scenario]: "
+labels:
+  - scenario
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please sanitize examples. Do not include real users, customers, contracts, credentials, or investigation materials.
+  - type: input
+    id: scenario
+    attributes:
+      label: Scenario
+      placeholder: e.g. live-commerce refund flow, recruitment AI screening, cross-border model API
+    validations:
+      required: true
+  - type: textarea
+    id: facts
+    attributes:
+      label: Sanitized facts
+      description: What does the feature or workflow do?
+    validations:
+      required: true
+  - type: dropdown
+    id: domain
+    attributes:
+      label: Main domain
+      options:
+        - Product launch
+        - Data privacy
+        - AI / algorithm / AIGC
+        - Content governance
+        - Advertising / marketing
+        - Platform transaction
+        - Game / virtual assets
+        - Payment / fintech-adjacent
+        - IP / open source
+        - Vendor contract
+        - Regulatory response
+        - Cross-domain
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected output
+      description: What should the Skill help identify or decide?

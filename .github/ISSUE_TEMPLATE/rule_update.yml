@@ -1,0 +1,36 @@
+name: Rule or source update
+description: Suggest a legal, regulatory, standard, or platform-rule update.
+title: "[Rule Update]: "
+labels:
+  - rule-update
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Prefer official sources. Do not paste paid database content or confidential legal memoranda.
+  - type: input
+    id: source_name
+    attributes:
+      label: Source name
+      placeholder: e.g. regulation, national standard, regulator notice, platform rule
+    validations:
+      required: true
+  - type: input
+    id: source_url
+    attributes:
+      label: Official or verifiable URL
+  - type: input
+    id: effective_date
+    attributes:
+      label: Effective or updated date
+  - type: textarea
+    id: impact
+    attributes:
+      label: Compliance impact
+      description: Which scenario, Skill, template, or test case should change?
+    validations:
+      required: true
+  - type: textarea
+    id: suggested_change
+    attributes:
+      label: Suggested change

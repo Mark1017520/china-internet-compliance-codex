@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## Unreleased
+
+- Added `QUICKSTART.md` for installation, first-run usage and troubleshooting.
+- Added `examples/` with five copy-ready compliance review prompts.
+- Added `CONTRIBUTING.md`, `SECURITY.md` and `LEGAL_DISCLAIMER.md`.
+- Added a GitHub Actions validation template for the Skill package.
+- Added issue templates, a pull request template and a global install helper script.
+
 ## v4.0 — 架构升级版
 
 本版本从“增强规则型 Skill”升级为“合规工作流系统雏形”。核心变化：
