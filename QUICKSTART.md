@@ -45,6 +45,18 @@ codex
 ./scripts/install-global.sh
 ```
 
+检查全局安装：
+
+```bash
+./scripts/check-install.sh
+```
+
+卸载全局 Skill：
+
+```bash
+./scripts/uninstall-global.sh
+```
+
 等价于：
 
 ```bash

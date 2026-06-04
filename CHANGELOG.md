@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Unreleased
+
+- Added FAQ, source maintenance and architecture documentation.
+- Added install check, uninstall and release packaging helper scripts.
+- Added expected output examples for the public example prompts.
+
 ## V1.0.0 — Initial Public Release
 
 首个公开发布版本，面向中国互联网业务场景的 Codex repo-scoped Skill 套件。

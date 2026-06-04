@@ -48,11 +48,13 @@ $china-internet-compliance 请审查这个功能是否可以上线：
 ├── AGENTS.md
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md
+├── FAQ.md
 ├── LEGAL_DISCLAIMER.md
 ├── LICENSE
 ├── QUICKSTART.md
 ├── README.md
 ├── SECURITY.md
+├── SOURCE_MAINTENANCE.md
 ├── examples/
 ├── docs/
 ├── scripts/
@@ -186,11 +188,22 @@ See `CHANGELOG.md` for details.
 ## Project Docs
 
 - `QUICKSTART.md`：下载、安装、首次调用和常见问题
+- `FAQ.md`：安装、调用、全局使用、法律边界和排错问答
 - `examples/`：可复制的典型场景提示词
 - `CONTRIBUTING.md`：贡献规则、模板、测试用例和法规来源的流程
 - `SECURITY.md`：敏感信息和安全问题报告规则
 - `LEGAL_DISCLAIMER.md`：法律意见边界、来源核验和数据处理提醒
+- `SOURCE_MAINTENANCE.md`：法规、监管规则、标准和平台规则的维护机制
+- `docs/architecture.md`：Skill 套件架构、路由模型和评测模型
 - `docs/github-actions/validate.yml`：可复制到 `.github/workflows/` 的 GitHub Actions 校验模板
+- `docs/releases/V1.0.0.md`：首个公开版本的 Release Notes
+
+## Utility Scripts
+
+- `scripts/install-global.sh`：安装所有 `china-*` Skills 到 `~/.agents/skills`
+- `scripts/check-install.sh`：检查全局 Skill 是否安装完整
+- `scripts/uninstall-global.sh`：从全局目录卸载本项目 Skills
+- `scripts/package-release.sh`：基于当前 Git HEAD 生成发布 zip 包
 
 ## License
 
