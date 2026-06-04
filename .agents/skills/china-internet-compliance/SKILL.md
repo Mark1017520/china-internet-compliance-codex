@@ -1,14 +1,14 @@
 ---
 name: china-internet-compliance
-description: Use as the v4.0 router skill for full-scenario compliance review for China-facing internet businesses. Route tasks to specialist skills and apply company profiles, commands, citation guardrails, source verification, connector inputs, evaluation rubrics, and duty-level rule libraries for product launch, data/privacy, cybersecurity, AI/algorithm/AIGC/agents, content/community/social/live-streaming governance, advertising/marketing, online transactions, games/virtual assets, payment/fintech-adjacent features, enterprise SaaS/PaaS/API/open platforms, IP/open source, vendor contracts, consumer/minors protection, cross-border issues, regulatory inquiries, police evidence requests, and internal compliance working papers. This skill is not tailored to any single company or industry vertical.
+description: Use as the V1.0.0 router skill for full-scenario compliance review for China-facing internet businesses. Route tasks to specialist skills and apply company profiles, commands, citation guardrails, source verification, connector inputs, evaluation rubrics, and duty-level rule libraries for product launch, data/privacy, cybersecurity, AI/algorithm/AIGC/agents, content/community/social/live-streaming governance, advertising/marketing, online transactions, games/virtual assets, payment/fintech-adjacent features, enterprise SaaS/PaaS/API/open platforms, IP/open source, vendor contracts, consumer/minors protection, cross-border issues, regulatory inquiries, police evidence requests, and internal compliance working papers. This skill is not tailored to any single company or industry vertical.
 ---
 
 # 中国互联网全场景合规评审 Skill
 
 
-## 0. v4.0 架构原则：主控路由 + 专项 Skill + Profile + 引用校验
+## 0. V1.0.0 架构原则：主控路由 + 专项 Skill + Profile + 引用校验
 
-本 Skill 是 v4.0 的主控路由 Skill。遇到合规任务时，应先判断是否需要调用或参照专项子 Skill：
+本 Skill 是 V1.0.0 的主控路由 Skill。遇到合规任务时，应先判断是否需要调用或参照专项子 Skill：
 
 | 专项 Skill | 使用场景 |
 |---|---|
@@ -24,7 +24,7 @@ description: Use as the v4.0 router skill for full-scenario compliance review fo
 | `china-vendor-contract` | SDK/API/模型/云服务供应商、DPA、SLA、安全条款、退出 |
 | `china-regulatory-response` | 监管问询、公安调证、诉讼/仲裁证据、行政检查 |
 
-v4.0 每次重大审查应执行四个增强动作：
+V1.0.0 每次重大审查应执行四个增强动作：
 
 1. **Profile 应用**：若存在 `profiles/COMPLIANCE_PROFILE.md`，先读取公司风险偏好、审批矩阵和内部规则；若不存在，提示可先运行 `commands/cold_start_interview.md`。
 2. **引用校验**：涉及明确法律/监管结论时，使用 `references/CITATION_GUARDRAILS.md` 和 `references/SOURCE_VERIFICATION_RULES.md` 标注依据状态。
@@ -72,7 +72,7 @@ v4.0 每次重大审查应执行四个增强动作：
 
 ## 5. 强制工作流
 
-每次审查按以下步骤执行。v3.0 起，必须先使用 `references/INPUT_FACT_SCHEMA.md` 抽取事实，并在涉及明确法规判断时调用 `references/ARTICLE_LEVEL_RULES.md`。
+每次审查按以下步骤执行。V1.0.0 起，必须先使用 `references/INPUT_FACT_SCHEMA.md` 抽取事实，并在涉及明确法规判断时调用 `references/ARTICLE_LEVEL_RULES.md`。
 
 ### Step 1 — 事实抽取
 
@@ -294,7 +294,7 @@ v4.0 每次重大审查应执行四个增强动作：
 - 评审结论要短、硬、可复制。
 
 
-## 9. v4.0 输出前自检清单
+## 9. V1.0.0 输出前自检清单
 
 在给出最终合规结论前，必须快速自检：
 
@@ -307,7 +307,7 @@ v4.0 每次重大审查应执行四个增强动作：
 - 是否避免在事实不足时输出“无风险”？
 - 是否对高变化法规事项提示核对最新版官方规则？
 
-## 10. v4.0 依据状态标记
+## 10. V1.0.0 依据状态标记
 
 重大结论中的依据建议使用以下标签：
 
@@ -320,9 +320,9 @@ v4.0 每次重大审查应执行四个增强动作：
 | 律师复核 | 重大法律争议、跨境法、许可资质、行政/刑事事项 | 不得替代正式法律意见 |
 
 
-## v4.1–v4.3 强化使用规则
+## V1.0.0 强化使用规则
 
-- v4.1：路由到专项 Skill 时，必须读取对应专项目录下的 `SKILL.md` 与 `PLAYBOOK.md`，不得只依赖主控通用规则。
-- v4.2：用户使用 `/china-compliance:*` 命令时，必须按 `commands/COMMAND_EXECUTION_STANDARD.md` 的命令契约执行。
-- v4.3：测试或质检输出时，应使用 `evals/expected_issues.json`、`evals/legal_correctness_rubric.md` 与 `scripts/evaluate_outputs.py`。
+- 路由到专项 Skill 时，必须读取对应专项目录下的 `SKILL.md` 与 `PLAYBOOK.md`，不得只依赖主控通用规则。
+- 用户使用 `/china-compliance:*` 命令时，必须按 `commands/COMMAND_EXECUTION_STANDARD.md` 的命令契约执行。
+- 测试或质检输出时，应使用 `evals/expected_issues.json`、`evals/legal_correctness_rubric.md` 与 `scripts/evaluate_outputs.py`。
 - 对涉及法律依据的高风险结论，应参考 `references/SOURCE_INDEX.yaml` 与 `references/CITATION_GUARDRAILS.md` 标记依据状态；静态来源索引不替代最新版法规核验。

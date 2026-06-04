@@ -23,7 +23,7 @@ def contains(path, needles, desc):
 require(ROOT/'SKILL.md', 'main skill')
 require(REPO/'AGENTS.md', 'repo AGENTS.md')
 
-# v4.0/v4.1/v4.2/v4.3 required files
+# V1.0.0 required files
 for rel in [
     'references/SPECIALIST_SKILL_DEEPENING_INDEX.md',
     'commands/COMMAND_EXECUTION_STANDARD.md',
@@ -93,4 +93,4 @@ print(f'[OK] Found {case_count} full-scenario test cases.')
 print(f'[OK] Found {len(ge)} golden examples.')
 print(f'[OK] Found {len(command_files)} executable command files.')
 print(f'[OK] Found {len(specialists)} deepened specialist skills.')
-print('[OK] v4.1/v4.2/v4.3 staged enhancement files are present.')
+print('[OK] V1.0.0 enhancement files are present.')

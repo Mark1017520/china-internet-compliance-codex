@@ -1,4 +1,4 @@
-version: v4.3
+version: V1.0.0
 purpose: Static official-source index for citation guardrails. Always verify latest text before final legal reliance.
 sources:
   - id: PIPL

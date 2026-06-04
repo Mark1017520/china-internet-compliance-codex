@@ -1,7 +1,7 @@
 ---
 name: china-advertising-marketing
 description: Use for internet ads, pop-up ads, KOL/KOC endorsements, livestream marketing, push/SMS, lotteries, coupons, membership claims, pricing claims.
-version: v4.1-specialist-deepening
+version: V1.0.0
 ---
 
 # 中国广告营销与增长合规专项

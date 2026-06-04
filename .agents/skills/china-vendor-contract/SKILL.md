@@ -1,7 +1,7 @@
 ---
 name: china-vendor-contract
 description: Use for SDK/API/cloud/model/vendor contracts, DPA, SLA, data processing roles, subcontracting, IP ownership, audit, security, procurement compliance.
-version: v4.1-specialist-deepening
+version: V1.0.0
 ---
 
 # 中国供应商、合同与第三方服务专项

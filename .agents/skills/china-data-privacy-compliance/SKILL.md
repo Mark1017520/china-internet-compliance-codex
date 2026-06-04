@@ -1,7 +1,7 @@
 ---
 name: china-data-privacy-compliance
 description: Use for personal information, sensitive personal information, PIA, SDK sharing, data export, consent, privacy notices, user rights, China network data obligations.
-version: v4.1-specialist-deepening
+version: V1.0.0
 ---
 
 # 中国数据与隐私合规专项

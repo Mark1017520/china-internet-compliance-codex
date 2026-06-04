@@ -1,4 +1,4 @@
-# v4.2 Command 执行标准
+# V1.0.0 Command 执行标准
 
 本标准约束 `/china-compliance:*` 命令，使其从提示模板升级为可执行工作流。
 

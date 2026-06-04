@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""v4.3 evaluator for China Internet Compliance Skill outputs.
+"""V1.0.0 evaluator for China Internet Compliance Skill outputs.
 
 Usage:
   python evaluate_outputs.py --case TC-001 --output path/to/output.md

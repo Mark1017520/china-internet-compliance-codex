@@ -1,7 +1,7 @@
 ---
 name: china-ai-algorithm-compliance
 description: Use for algorithmic recommendation, automated decision-making, generative AI, deep synthesis, AI labels, model vendors, RAG, agents, AI tool calls.
-version: v4.1-specialist-deepening
+version: V1.0.0
 ---
 
 # 中国AI/算法/AIGC合规专项

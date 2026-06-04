@@ -1,7 +1,7 @@
 ---
 name: china-game-virtual-assets
 description: Use for online games, mini-games, gacha, loot boxes, virtual currency/items, livestream gifts, recharge rankings, minors protection, probability mechanics.
-version: v4.1-specialist-deepening
+version: V1.0.0
 ---
 
 # 中国游戏、虚拟资产与未成年人专项

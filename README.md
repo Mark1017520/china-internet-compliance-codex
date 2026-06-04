@@ -175,9 +175,11 @@ Expected result:
 
 ## Version Notes
 
-- v4.1 specialist deepening: each specialist skill includes judgment trees, required inputs, P0/P1 triggers and evidence requirements.
-- v4.2 command execution: each command has a stable workflow contract and quality threshold.
-- v4.3 evaluation pack: expected issues for 120 test cases, legal correctness rubric, benchmark and output evaluator.
+`V1.0.0` is the first public release. It includes:
+
+- Specialist deepening: each specialist Skill includes judgment trees, required inputs, P0/P1 triggers and evidence requirements.
+- Command execution: each command has a stable workflow contract and quality threshold.
+- Evaluation pack: expected issues for 120 test cases, legal correctness rubric, benchmark and output evaluator.
 
 See `CHANGELOG.md` for details.
 

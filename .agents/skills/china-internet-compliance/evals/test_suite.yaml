@@ -1,4 +1,4 @@
-version: v4.3
+version: V1.0.0
 suite_name: china_internet_compliance_core
 expected_issues_file: evals/expected_issues.json
 rubrics:
