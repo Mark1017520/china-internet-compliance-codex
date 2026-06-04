@@ -47,6 +47,8 @@ $china-internet-compliance 请审查这个功能是否可以上线：
 .
 ├── AGENTS.md
 ├── CHANGELOG.md
+├── CAPABILITIES.md
+├── COMPANY_IMPLEMENTATION_GUIDE.md
 ├── CONTRIBUTING.md
 ├── FAQ.md
 ├── LEGAL_DISCLAIMER.md
@@ -188,6 +190,8 @@ See `CHANGELOG.md` for details.
 ## Project Docs
 
 - `QUICKSTART.md`：下载、安装、首次调用和常见问题
+- `CAPABILITIES.md`：已实现能力、部分实现能力和仅为规范的能力边界
+- `COMPANY_IMPLEMENTATION_GUIDE.md`：从通用包落地为公司合规助手的实施指南
 - `FAQ.md`：安装、调用、全局使用、法律边界和排错问答
 - `examples/`：可复制的典型场景提示词
 - `CONTRIBUTING.md`：贡献规则、模板、测试用例和法规来源的流程

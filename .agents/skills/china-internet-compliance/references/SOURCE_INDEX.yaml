@@ -1,59 +1,366 @@
 version: V1.0.0
-purpose: Static official-source index for citation guardrails. Always verify latest text before final legal reliance.
+last_verified: 2026-06-04
+purpose: >
+  Static official-source index for citation guardrails. This index is a
+  starting point for compliance triage and working papers. Always verify the
+  latest official text before final legal reliance.
+
+source_status:
+  official_current: Official text or official release page reviewed for this index.
+  official_high_change: Official source reviewed, but topic changes frequently.
+  official_future_effective: Official source published but not yet effective as of last_verified.
+  needs_local_profile: Must be combined with company policy, product facts, or local legal review.
+
 sources:
+  - id: CYBERSECURITY_LAW
+    name: 中华人民共和国网络安全法
+    authority: 全国人民代表大会常务委员会
+    level: law
+    effective_date: 2017-06-01
+    amended_date: 2025-10-28
+    official_url: https://www.cac.gov.cn/2025-12/29/c_1768735112911946.htm
+    status: official_high_change
+    scenarios: [network_security, real_name, data_security, app, content, critical_information_infrastructure]
+
+  - id: DATA_SECURITY_LAW
+    name: 中华人民共和国数据安全法
+    authority: 全国人民代表大会常务委员会
+    level: law
+    effective_date: 2021-09-01
+    official_url: https://www.npc.gov.cn/npc/c2/c30834/202106/t20210610_311888.html
+    status: official_current
+    scenarios: [data_security, important_data, data_classification, cross_border, incident_response]
+
   - id: PIPL
     name: 中华人民共和国个人信息保护法
     authority: 全国人民代表大会常务委员会
+    level: law
     effective_date: 2021-11-01
     official_url: https://www.cac.gov.cn/2021-08/20/c_1631050028355286.htm
-    high_change: false
-    scenarios: [data_privacy, cross_border, user_rights, sensitive_personal_info]
+    status: official_current
+    scenarios: [data_privacy, cross_border, user_rights, sensitive_personal_info, automated_decision]
+
   - id: NETWORK_DATA_SECURITY_REGULATION
     name: 网络数据安全管理条例
     authority: 国务院
+    level: administrative_regulation
     effective_date: 2025-01-01
     official_url: https://www.cac.gov.cn/2024-09/30/c_1729384452307680.htm
-    high_change: true
-    scenarios: [network_data, data_security, personal_information, important_data]
+    status: official_high_change
+    scenarios: [network_data, data_security, personal_information, important_data, platform_obligations]
+
+  - id: DATA_EXPORT_SECURITY_ASSESSMENT_MEASURES
+    name: 数据出境安全评估办法
+    authority: 国家互联网信息办公室
+    level: department_rule
+    effective_date: 2022-09-01
+    official_url: https://www.cac.gov.cn/2022-07/07/c_1658811536396503.htm
+    status: official_high_change
+    scenarios: [cross_border, important_data, personal_information_export, security_assessment]
+
+  - id: SCC_MEASURES
+    name: 个人信息出境标准合同办法
+    authority: 国家互联网信息办公室
+    level: department_rule
+    effective_date: 2023-06-01
+    official_url: https://www.cac.gov.cn/2023-02/24/c_1678884831596384.htm
+    status: official_high_change
+    scenarios: [cross_border, personal_information_export, standard_contract]
+
+  - id: CROSS_BORDER_DATA_FLOW_RULES
+    name: 促进和规范数据跨境流动规定
+    authority: 国家互联网信息办公室
+    level: department_rule
+    effective_date: 2024-03-22
+    official_url: https://www.cac.gov.cn/2024-03/22/c_1712776611775634.htm
+    status: official_high_change
+    scenarios: [cross_border, data_export, negative_list, standard_contract, certification]
+
+  - id: APP_ILLEGAL_COLLECTION_IDENTIFICATION
+    name: App违法违规收集使用个人信息行为认定方法
+    authority: 国家互联网信息办公室、工业和信息化部、公安部、市场监管总局
+    level: regulatory_guideline
+    effective_date: 2019-11-28
+    official_url: https://www.gov.cn/xinwen/2019-12/30/content_5465173.htm
+    status: official_high_change
+    scenarios: [app, sdk, personal_information, user_consent, privacy_policy]
+
   - id: APP_INFO_SERVICE_RULES
     name: 移动互联网应用程序信息服务管理规定
     authority: 国家互联网信息办公室
+    level: department_rule
     effective_date: 2022-08-01
     official_url: https://www.cac.gov.cn/2022-06/14/c_1656821626455324.htm
-    high_change: true
-    scenarios: [app, app_store, mini_program, browser_plugin]
+    status: official_high_change
+    scenarios: [app, app_store, mini_program, browser_plugin, content_security]
+
+  - id: APP_ICP_FILING_NOTICE
+    name: 工业和信息化部关于开展移动互联网应用程序备案工作的通知
+    authority: 工业和信息化部
+    level: regulatory_notice
+    effective_date: 2023-08-04
+    official_url: https://app.www.gov.cn/govdata/gov/202308/09/506126/article.html
+    status: official_high_change
+    scenarios: [app, filing, app_store, network_access]
+
+  - id: CHILDREN_PI_RULES
+    name: 儿童个人信息网络保护规定
+    authority: 国家互联网信息办公室
+    level: department_rule
+    effective_date: 2019-10-01
+    official_url: https://www.gov.cn/zhengce/2019-10/08/content_5728947.htm
+    status: official_current
+    scenarios: [children, minors, personal_information, guardian_consent]
+
+  - id: MINORS_PROTECTION_LAW
+    name: 中华人民共和国未成年人保护法
+    authority: 全国人民代表大会常务委员会
+    level: law
+    effective_date: 2021-06-01
+    official_url: https://www.moe.gov.cn/jyb_sjzl/sjzl_zcfg/zcfg_qtxgfl/202110/t20211025_574798.html
+    status: official_current
+    scenarios: [minors, content, game, education, online_protection]
+
+  - id: MINORS_ONLINE_PROTECTION_REGULATION
+    name: 未成年人网络保护条例
+    authority: 国务院
+    level: administrative_regulation
+    effective_date: 2024-01-01
+    official_url: https://www.gov.cn/zhengce/content/202310/content_6911288.htm
+    status: official_high_change
+    scenarios: [minors, online_protection, game, content, personal_information]
+
   - id: ALGORITHM_RECOMMENDATION_RULES
     name: 互联网信息服务算法推荐管理规定
     authority: 国家互联网信息办公室等
+    level: department_rule
     effective_date: 2022-03-01
     official_url: https://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm
-    high_change: true
-    scenarios: [algorithm_recommendation, content_distribution, automated_decision]
+    status: official_high_change
+    scenarios: [algorithm_recommendation, content_distribution, automated_decision, filing]
+
   - id: DEEP_SYNTHESIS_RULES
     name: 互联网信息服务深度合成管理规定
     authority: 国家互联网信息办公室等
+    level: department_rule
     effective_date: 2023-01-10
     official_url: https://www.cac.gov.cn/2022-12/11/c_1672221949354811.htm
-    high_change: true
-    scenarios: [deep_synthesis, voice_clone, face_swap, ai_avatar]
+    status: official_high_change
+    scenarios: [deep_synthesis, voice_clone, face_swap, ai_avatar, synthetic_content]
+
   - id: GENERATIVE_AI_RULES
     name: 生成式人工智能服务管理暂行办法
     authority: 国家互联网信息办公室等
+    level: department_rule
     effective_date: 2023-08-15
     official_url: https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm
-    high_change: true
-    scenarios: [generative_ai, public_service, model_provider]
+    status: official_high_change
+    scenarios: [generative_ai, public_service, model_provider, training_data, safety_assessment]
+
   - id: AIGC_LABEL_RULES
     name: 人工智能生成合成内容标识办法
     authority: 国家互联网信息办公室等
+    level: department_rule
     effective_date: 2025-09-01
     official_url: https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm
-    high_change: true
-    scenarios: [aigc_label, deep_synthesis, generative_ai]
+    status: official_high_change
+    scenarios: [aigc_label, deep_synthesis, generative_ai, synthetic_content]
+
+  - id: INTERNET_INFORMATION_SERVICE_MEASURES
+    name: 互联网信息服务管理办法
+    authority: 国务院
+    level: administrative_regulation
+    effective_date: 2000-09-25
+    official_url: https://xzfg.moj.gov.cn/law/download?LawID=1756&type=pdf
+    status: official_current
+    scenarios: [internet_information_service, icp, content, network_operation]
+
+  - id: CONTENT_ECOSYSTEM_RULES
+    name: 网络信息内容生态治理规定
+    authority: 国家互联网信息办公室
+    level: department_rule
+    effective_date: 2020-03-01
+    official_url: https://www.gov.cn/zhengce/2019-12/20/content_5728944.htm
+    status: official_high_change
+    scenarios: [content_governance, ugc, community, recommendation, minors]
+
+  - id: USER_ACCOUNT_INFO_RULES
+    name: 互联网用户账号信息管理规定
+    authority: 国家互联网信息办公室
+    level: department_rule
+    effective_date: 2022-08-01
+    official_url: https://www.gov.cn/xinwen/2022-06/28/content_5698178.htm
+    status: official_high_change
+    scenarios: [account, real_name, account_profile, content_governance]
+
+  - id: COMMENT_SERVICE_RULES
+    name: 互联网跟帖评论服务管理规定
+    authority: 国家互联网信息办公室
+    level: department_rule
+    effective_date: 2022-12-15
+    official_url: https://www.cac.gov.cn/2022-11/16/c_1670253725725039.htm
+    status: official_high_change
+    scenarios: [comments, bullet_comments, ugc, moderation, reporting]
+
+  - id: POPUP_PUSH_RULES
+    name: 互联网弹窗信息推送服务管理规定
+    authority: 国家互联网信息办公室、工业和信息化部、市场监管总局
+    level: department_rule
+    effective_date: 2022-09-30
+    official_url: https://www.cac.gov.cn/2022-09/08/c_1664260384702890.htm
+    status: official_high_change
+    scenarios: [popup, push, content_distribution, advertising, news]
+
+  - id: INTERNET_NEWS_RULES
+    name: 互联网新闻信息服务管理规定
+    authority: 国家互联网信息办公室
+    level: department_rule
+    effective_date: 2017-06-01
+    official_url: https://www.cac.gov.cn/2017-05/02/c_1120902760.htm
+    status: official_high_change
+    scenarios: [news, content_license, media, platform_accounts]
+
+  - id: ADVERTISING_LAW
+    name: 中华人民共和国广告法
+    authority: 全国人民代表大会常务委员会
+    level: law
+    effective_date: 1995-02-01
+    official_url: https://www.npc.gov.cn/npc/c1773/c1848/c21114/c25274/c25277/201905/t20190521_207459.html
+    status: official_current
+    scenarios: [advertising, marketing, special_industry_ads, endorsements]
+
   - id: INTERNET_ADS_RULES
     name: 互联网广告管理办法
     authority: 国家市场监督管理总局
+    level: department_rule
     effective_date: 2023-05-01
-    official_url: https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202306/t20230620_481045.html
-    high_change: true
+    official_url: https://www.gov.cn/zhengce/202305/content_6858084.htm
+    status: official_high_change
     scenarios: [advertising, pop_up_ads, influencer_marketing, special_industry_ads]
+
+  - id: ANTI_UNFAIR_COMPETITION_LAW
+    name: 中华人民共和国反不正当竞争法
+    authority: 全国人民代表大会常务委员会
+    level: law
+    effective_date: 2018-01-01
+    amended_date: 2019-04-23
+    official_url: https://www.npc.gov.cn/npc/c2/c30834/201906/t20190608_296509.html
+    status: official_current
+    scenarios: [marketing, false_promotion, commercial_disparagement, platform_competition]
+
+  - id: CONSUMER_RIGHTS_LAW
+    name: 中华人民共和国消费者权益保护法
+    authority: 全国人民代表大会常务委员会
+    level: law
+    effective_date: 1994-01-01
+    official_url: https://www.npc.gov.cn/npc/c1773/c1848/c21114/c21170/c21174/201905/t20190521_423135.html
+    status: official_current
+    scenarios: [consumer_rights, ecommerce, refund, after_sales, marketing]
+
+  - id: CONSUMER_RIGHTS_IMPLEMENTING_REGULATION
+    name: 中华人民共和国消费者权益保护法实施条例
+    authority: 国务院
+    level: administrative_regulation
+    effective_date: 2024-07-01
+    official_url: https://xzfg.moj.gov.cn/front/law/detail?LawID=1708
+    status: official_high_change
+    scenarios: [consumer_rights, platform_economy, marketing, after_sales, personal_information]
+
+  - id: ECOMMERCE_LAW
+    name: 中华人民共和国电子商务法
+    authority: 全国人民代表大会常务委员会
+    level: law
+    effective_date: 2019-01-01
+    official_url: https://www.samr.gov.cn/wljys/gzzd/art/2023/art_3e75434c954b4cb9bd14867dacff26d1.html
+    status: official_current
+    scenarios: [ecommerce, platform, merchant_governance, consumer_rights]
+
+  - id: ONLINE_TRANSACTION_SUPERVISION_MEASURES
+    name: 网络交易监督管理办法
+    authority: 国家市场监督管理总局
+    level: department_rule
+    effective_date: 2021-05-01
+    official_url: https://www.samr.gov.cn/cms_files/filemanager/samr/www/samrnew/samrgkml/nsjg/fgs/202103/W020211127408192099852.pdf
+    status: official_high_change
+    scenarios: [online_transaction, ecommerce, platform, merchant_governance]
+
+  - id: PLATFORM_RULE_SUPERVISION_MEASURES
+    name: 网络交易平台规则监督管理办法
+    authority: 国家市场监督管理总局、国家互联网信息办公室
+    level: department_rule
+    effective_date: 2026-02-01
+    official_url: https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2026/art_85b474fc5a08494bb60ca6a280b98d7d.html
+    status: official_high_change
+    scenarios: [platform_rules, ecommerce, merchant_governance, platform_governance]
+
+  - id: LIVE_ECOMMERCE_SUPERVISION_MEASURES
+    name: 直播电商监督管理办法
+    authority: 国家市场监督管理总局、国家互联网信息办公室
+    level: department_rule
+    effective_date: 2026-02-01
+    official_url: https://www.samr.gov.cn/xw/zj/art/2026/art_7daec9b366a94edb9421d2cb57620a41.html
+    status: official_high_change
+    scenarios: [live_commerce, advertising, ecommerce, content_governance, consumer_rights]
+
+  - id: LIVE_MARKETING_TRIAL_MEASURES
+    name: 网络直播营销管理办法（试行）
+    authority: 国家互联网信息办公室等七部门
+    level: department_rule
+    effective_date: 2021-05-25
+    official_url: https://www.gov.cn/xinwen/2021-04/23/content_5601681.htm
+    status: official_high_change
+    scenarios: [live_marketing, live_commerce, advertising, influencer, platform]
+
+  - id: ONLINE_GAME_MINORS_NOTICE
+    name: 国家新闻出版署关于防止未成年人沉迷网络游戏的通知
+    authority: 国家新闻出版署
+    level: regulatory_notice
+    effective_date: 2019-11-01
+    official_url: https://www.nppa.gov.cn/xxfb/zcfg/gfxwj/201911/t20191119_4503.html
+    status: official_high_change
+    scenarios: [game, minors, anti_addiction, real_name, recharge_limit]
+
+  - id: ONLINE_GAME_OPERATION_NOTICE
+    name: 文化部关于规范网络游戏运营加强事中事后监管工作的通知
+    authority: 文化部
+    level: regulatory_notice
+    effective_date: 2017-05-01
+    official_url: https://zwgk.mct.gov.cn/zfxxgkml/scgl/202012/t20201206_918193.html
+    status: official_high_change
+    scenarios: [game, virtual_assets, probability, game_operation]
+
+  - id: ANTI_TELECOM_FRAUD_LAW
+    name: 中华人民共和国反电信网络诈骗法
+    authority: 全国人民代表大会常务委员会
+    level: law
+    effective_date: 2022-12-01
+    official_url: https://www.npc.gov.cn/c2/c30834/202209/t20220902_319186.html
+    status: official_current
+    scenarios: [account, payment, telecom_fraud, app_filing, real_name]
+
+  - id: CYBERSECURITY_REVIEW_MEASURES
+    name: 网络安全审查办法
+    authority: 国家互联网信息办公室等十三部门
+    level: department_rule
+    effective_date: 2022-02-15
+    official_url: https://www.cac.gov.cn/2022-01/04/c_1642894602182845.htm
+    status: official_high_change
+    scenarios: [cybersecurity_review, critical_information_infrastructure, platform_data, national_security]
+
+  - id: CII_SECURITY_REGULATION
+    name: 关键信息基础设施安全保护条例
+    authority: 国务院
+    level: administrative_regulation
+    effective_date: 2021-09-01
+    official_url: https://www.gov.cn/gongbao/content/2021/content_5636138.htm
+    status: official_current
+    scenarios: [critical_information_infrastructure, network_security, incident_response]
+
+  - id: FINANCIAL_PRODUCT_ONLINE_MARKETING_MEASURES
+    name: 金融产品网络营销管理办法
+    authority: 中国人民银行等
+    level: department_rule
+    effective_date: 2026-09-30
+    official_url: https://www.cac.gov.cn/2026-04/24/c_1778769008779432.htm
+    status: official_future_effective
+    scenarios: [financial_marketing, financial_ads, suitability, platform_marketing]
