@@ -1,6 +1,6 @@
-# V1.0.0 专项 Skill 深化索引
+# V1.0.1 专项 Skill 深化索引
 
-本文件用于说明 V1.0.0 对 11 个专项 Skill 的深化原则。主控 Skill 在路由到专项 Skill 时，应优先读取该专项目录下的 `SKILL.md` 和 `PLAYBOOK.md`。
+本文件用于说明 V1.0.1 对 11 个专项 Skill 的深化原则。主控 Skill 在路由到专项 Skill 时，应优先读取该专项目录下的 `SKILL.md` 和 `PLAYBOOK.md`。
 
 ## 专项深化要求
 

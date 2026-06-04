@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
-"""V1.0.0 evaluator for China Internet Compliance Skill outputs.
+"""V1.0.1 evaluator for China Internet Compliance Skill outputs.
 
 Usage:
   python evaluate_outputs.py --case TC-001 --output path/to/output.md
   python evaluate_outputs.py --output path/to/output.md
 
-This script does not decide legal correctness by itself. It checks structural
-coverage and expected issue coverage, then produces a review score for human calibration.
+This script does not decide legal correctness by itself. It is a lightweight
+structure and keyword/term coverage checker, then produces a review score for
+human calibration against the rubrics. Similar meanings may still need manual
+review when they do not use the expected terms.
 """
 import argparse, json, re
 from pathlib import Path

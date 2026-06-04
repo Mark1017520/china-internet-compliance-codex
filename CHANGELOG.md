@@ -4,10 +4,13 @@
 
 - Rewrote all 15 command workflows with scenario-specific inputs, execution steps, output formats and quality gates.
 - Standardized command-style references to underscore command names across README, Quickstart, examples and evals.
+- Corrected TC-111 to TC-120 vertical high-regulation expected issues and case matrix entries.
+- Unified active package version markers to `V1.0.1`.
 - Expanded `SOURCE_INDEX.yaml` with core official sources across data, AI, App, content, ads, ecommerce, live commerce, games, minors, cybersecurity and financial marketing.
 - Rewrote all 30 golden examples into realistic legal/compliance review notes with fact matrices, evidence gaps, remediation owners and launch/response gates.
 - Added `GOLDEN_EXAMPLE_STANDARD.md` to define the expected structure and quality rules for future examples.
 - Updated `validate_skill.py` to count the golden example standard separately from the 30 golden examples.
+- Clarified that `evaluate_outputs.py` is an auxiliary structure/coverage checker, not an automated legal-correctness judge.
 - Added `CAPABILITIES.md` to distinguish implemented capabilities from connector/agent specifications.
 - Added `COMPANY_IMPLEMENTATION_GUIDE.md` for enterprise rollout.
 - Added FAQ, source maintenance and architecture documentation.

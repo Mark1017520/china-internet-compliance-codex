@@ -1,5 +1,5 @@
 {
-  "version": "V1.0.0",
+  "version": "V1.0.1",
   "case_count": 120,
   "cases": [
     {
@@ -3683,29 +3683,31 @@
       "category": "垂直高监管",
       "expected_risk_level": "P1",
       "mandatory_dimensions": [
-        "scope",
-        "evidence_chain",
-        "approval",
-        "data_minimization"
+        "education_advertising",
+        "qualification",
+        "consumer_protection",
+        "minors_or_prepaid",
+        "evidence_gate"
       ],
       "expected_issues": [
-        "来函真实性与权限核验",
-        "调取范围最小必要",
-        "个人信息/商业秘密脱敏",
-        "证据链与字段解释",
-        "审批与交付留痕"
+        "教育培训广告虚假或绝对化宣传",
+        "名师/保过承诺证明不足",
+        "办学或培训资质与教师资质核验",
+        "预付费和退费规则透明",
+        "未成年人保护与家长告知"
       ],
       "required_terms": [
-        "来函真实性与权限核验",
-        "调取范围最小必要",
-        "个人信息/商业秘密脱敏",
-        "证据链与字段解释",
-        "审批与交付留痕"
+        "教育广告",
+        "保过",
+        "资质",
+        "虚假宣传",
+        "退费",
+        "未成年人"
       ],
       "common_mistakes": [
-        "忽略交叉场景",
-        "材料不足时直接低风险",
-        "只列法规名称不解释触发事实",
+        "套用监管调证风险点",
+        "忽略教育行业资质和广告证明",
+        "只谈营销转化不谈退费和预付费",
         "未给上线gate和关闭标准"
       ]
     },
@@ -3715,32 +3717,32 @@
       "category": "垂直高监管",
       "expected_risk_level": "P1",
       "mandatory_dimensions": [
-        "scope",
-        "evidence_chain",
-        "approval",
-        "data_minimization"
+        "medical_service_boundary",
+        "qualification",
+        "health_data",
+        "content_moderation",
+        "risk_transfer"
       ],
       "expected_issues": [
-        "来函真实性与权限核验",
-        "调取范围最小必要",
-        "个人信息/商业秘密脱敏",
-        "证据链与字段解释",
-        "审批与交付留痕",
-        "敏感个人信息或高敏字段处理"
+        "互联网诊疗资质与服务边界",
+        "普通用户提供诊疗建议风险",
+        "医疗广告或健康科普信息审查",
+        "健康数据和敏感个人信息处理",
+        "医疗风险转介与平台审核"
       ],
       "required_terms": [
+        "互联网诊疗",
+        "医疗资质",
+        "普通用户",
+        "诊疗建议",
+        "健康数据",
         "敏感个人信息",
-        "单独同意",
-        "来函真实性与权限核验",
-        "调取范围最小必要",
-        "个人信息/商业秘密脱敏",
-        "证据链与字段解释",
-        "审批与交付留痕"
+        "转诊"
       ],
       "common_mistakes": [
-        "忽略交叉场景",
-        "材料不足时直接低风险",
-        "只列法规名称不解释触发事实",
+        "套用监管调证风险点",
+        "忽略诊疗资质和普通用户回答边界",
+        "只谈社区内容不谈健康数据",
         "未给上线gate和关闭标准"
       ]
     },
@@ -3750,29 +3752,31 @@
       "category": "垂直高监管",
       "expected_risk_level": "P1",
       "mandatory_dimensions": [
-        "scope",
-        "evidence_chain",
-        "approval",
-        "data_minimization"
+        "automated_decision",
+        "employment_fairness",
+        "personal_information",
+        "explainability",
+        "appeal"
       ],
       "expected_issues": [
-        "来函真实性与权限核验",
-        "调取范围最小必要",
-        "个人信息/商业秘密脱敏",
-        "证据链与字段解释",
-        "审批与交付留痕"
+        "算法招聘自动化决策风险",
+        "年龄过滤与就业歧视",
+        "简历个人信息最小必要与告知",
+        "人工复核与申诉机制",
+        "模型偏见和训练数据合法性"
       ],
       "required_terms": [
-        "来函真实性与权限核验",
-        "调取范围最小必要",
-        "个人信息/商业秘密脱敏",
-        "证据链与字段解释",
-        "审批与交付留痕"
+        "自动化决策",
+        "年龄歧视",
+        "就业公平",
+        "简历",
+        "人工复核",
+        "申诉"
       ],
       "common_mistakes": [
-        "忽略交叉场景",
-        "材料不足时直接低风险",
-        "只列法规名称不解释触发事实",
+        "套用监管调证风险点",
+        "忽略就业公平和歧视变量",
+        "把算法筛选当普通推荐",
         "未给上线gate和关闭标准"
       ]
     },
@@ -3782,29 +3786,31 @@
       "category": "垂直高监管",
       "expected_risk_level": "P1",
       "mandatory_dimensions": [
-        "scope",
-        "evidence_chain",
-        "approval",
-        "data_minimization"
+        "real_estate_advertising",
+        "listing_authenticity",
+        "platform_responsibility",
+        "consumer_protection",
+        "complaint_takedown"
       ],
       "expected_issues": [
-        "来函真实性与权限核验",
-        "调取范围最小必要",
-        "个人信息/商业秘密脱敏",
-        "证据链与字段解释",
-        "审批与交付留痕"
+        "虚假房源和引流风险",
+        "房源真实性核验",
+        "经纪或平台资质与责任",
+        "广告价格面积等信息真实性",
+        "投诉下架与留痕机制"
       ],
       "required_terms": [
-        "来函真实性与权限核验",
-        "调取范围最小必要",
-        "个人信息/商业秘密脱敏",
-        "证据链与字段解释",
-        "审批与交付留痕"
+        "虚假房源",
+        "房源真实性",
+        "广告",
+        "资质",
+        "消费者",
+        "下架"
       ],
       "common_mistakes": [
-        "忽略交叉场景",
-        "材料不足时直接低风险",
-        "只列法规名称不解释触发事实",
+        "套用监管调证风险点",
+        "忽略房源真实性和引流目的",
+        "只谈平台免责声明",
         "未给上线gate和关闭标准"
       ]
     },
@@ -3814,29 +3820,31 @@
       "category": "垂直高监管",
       "expected_risk_level": "P1",
       "mandatory_dimensions": [
-        "scope",
-        "evidence_chain",
-        "approval",
-        "data_minimization"
+        "pricing_algorithm",
+        "consumer_rights",
+        "transparency",
+        "fairness",
+        "appeal"
       ],
       "expected_issues": [
-        "来函真实性与权限核验",
-        "调取范围最小必要",
-        "个人信息/商业秘密脱敏",
-        "证据链与字段解释",
-        "审批与交付留痕"
+        "动态定价规则透明度不足",
+        "价格歧视或大数据杀熟风险",
+        "消费者知情权和选择权",
+        "算法解释与人工申诉",
+        "价格变更留痕和公平性评估"
       ],
       "required_terms": [
-        "来函真实性与权限核验",
-        "调取范围最小必要",
-        "个人信息/商业秘密脱敏",
-        "证据链与字段解释",
-        "审批与交付留痕"
+        "动态定价",
+        "价格歧视",
+        "大数据杀熟",
+        "消费者知情",
+        "算法解释",
+        "申诉"
       ],
       "common_mistakes": [
-        "忽略交叉场景",
-        "材料不足时直接低风险",
-        "只列法规名称不解释触发事实",
+        "套用监管调证风险点",
+        "忽略价格规则透明和差别待遇",
+        "只说商业策略不说明消费者权益",
         "未给上线gate和关闭标准"
       ]
     },
@@ -3846,29 +3854,31 @@
       "category": "垂直高监管",
       "expected_risk_level": "P1",
       "mandatory_dimensions": [
-        "scope",
-        "evidence_chain",
-        "approval",
-        "data_minimization"
+        "charity_qualification",
+        "fundraising_boundary",
+        "fund_flow",
+        "advertising_claims",
+        "platform_review"
       ],
       "expected_issues": [
-        "来函真实性与权限核验",
-        "调取范围最小必要",
-        "个人信息/商业秘密脱敏",
-        "证据链与字段解释",
-        "审批与交付留痕"
+        "公开募捐主体资质核验",
+        "普通商家擅自发起公益募捐风险",
+        "善款流向、票据和公示",
+        "公益营销真实性和误导宣传",
+        "平台审核、下架和投诉机制"
       ],
       "required_terms": [
-        "来函真实性与权限核验",
-        "调取范围最小必要",
-        "个人信息/商业秘密脱敏",
-        "证据链与字段解释",
-        "审批与交付留痕"
+        "公益募捐",
+        "公开募捐资质",
+        "商家",
+        "善款流向",
+        "公示",
+        "平台审核"
       ],
       "common_mistakes": [
-        "忽略交叉场景",
-        "材料不足时直接低风险",
-        "只列法规名称不解释触发事实",
+        "套用监管调证风险点",
+        "忽略公开募捐主体资质",
+        "只写公益口号不核验资金流",
         "未给上线gate和关闭标准"
       ]
     },
@@ -3878,29 +3888,31 @@
       "category": "垂直高监管",
       "expected_risk_level": "P1",
       "mandatory_dimensions": [
-        "scope",
-        "evidence_chain",
-        "approval",
-        "data_minimization"
+        "publication_license",
+        "copyright",
+        "content_review",
+        "distribution_scope",
+        "takedown"
       ],
       "expected_issues": [
-        "来函真实性与权限核验",
-        "调取范围最小必要",
-        "个人信息/商业秘密脱敏",
-        "证据链与字段解释",
-        "审批与交付留痕"
+        "网络出版服务资质",
+        "电子书版权授权链",
+        "内容审核与违禁内容处置",
+        "下载分发和授权范围",
+        "侵权投诉下架和留痕"
       ],
       "required_terms": [
-        "来函真实性与权限核验",
-        "调取范围最小必要",
-        "个人信息/商业秘密脱敏",
-        "证据链与字段解释",
-        "审批与交付留痕"
+        "网络出版",
+        "电子书",
+        "版权授权",
+        "内容审核",
+        "下载分发",
+        "侵权下架"
       ],
       "common_mistakes": [
-        "忽略交叉场景",
-        "材料不足时直接低风险",
-        "只列法规名称不解释触发事实",
+        "套用监管调证风险点",
+        "忽略网络出版资质",
+        "只谈版权不谈内容审核",
         "未给上线gate和关闭标准"
       ]
     },
@@ -3910,29 +3922,31 @@
       "category": "垂直高监管",
       "expected_risk_level": "P1",
       "mandatory_dimensions": [
-        "scope",
-        "evidence_chain",
-        "approval",
-        "data_minimization"
+        "automotive_safety_claim",
+        "advertising_claims",
+        "consumer_protection",
+        "product_liability",
+        "evidence_gate"
       ],
       "expected_issues": [
-        "来函真实性与权限核验",
-        "调取范围最小必要",
-        "个人信息/商业秘密脱敏",
-        "证据链与字段解释",
-        "审批与交付留痕"
+        "自动驾驶安全无事故绝对化承诺",
+        "产品功能边界和安全提示",
+        "广告真实性与证明材料",
+        "消费者误导和风险告知",
+        "事故责任、召回和投诉机制"
       ],
       "required_terms": [
-        "来函真实性与权限核验",
-        "调取范围最小必要",
-        "个人信息/商业秘密脱敏",
-        "证据链与字段解释",
-        "审批与交付留痕"
+        "自动驾驶",
+        "安全无事故",
+        "绝对化",
+        "广告真实性",
+        "安全提示",
+        "消费者误导"
       ],
       "common_mistakes": [
-        "忽略交叉场景",
-        "材料不足时直接低风险",
-        "只列法规名称不解释触发事实",
+        "套用监管调证风险点",
+        "忽略产品安全和广告证明",
+        "把技术愿景写成确定承诺",
         "未给上线gate和关闭标准"
       ]
     },
@@ -3942,32 +3956,32 @@
       "category": "垂直高监管",
       "expected_risk_level": "P1",
       "mandatory_dimensions": [
-        "scope",
-        "evidence_chain",
-        "approval",
-        "data_minimization"
+        "government_service",
+        "sensitive_personal_information",
+        "vendor_management",
+        "data_minimization",
+        "access_control"
       ],
       "expected_issues": [
-        "来函真实性与权限核验",
-        "调取范围最小必要",
-        "个人信息/商业秘密脱敏",
-        "证据链与字段解释",
-        "审批与交付留痕",
-        "敏感个人信息或高敏字段处理"
+        "身份证照片敏感个人信息处理",
+        "政务数据处理授权与外包边界",
+        "最小必要、单独同意或法定授权告知",
+        "供应商安全、保密和转委托约束",
+        "数据留存、访问控制和删除审计"
       ],
       "required_terms": [
+        "政务服务",
+        "外包运营",
+        "身份证照片",
         "敏感个人信息",
+        "最小必要",
         "单独同意",
-        "来函真实性与权限核验",
-        "调取范围最小必要",
-        "个人信息/商业秘密脱敏",
-        "证据链与字段解释",
-        "审批与交付留痕"
+        "访问控制"
       ],
       "common_mistakes": [
-        "忽略交叉场景",
-        "材料不足时直接低风险",
-        "只列法规名称不解释触发事实",
+        "套用监管调证风险点",
+        "忽略政务数据和外包授权边界",
+        "只谈隐私政策不谈供应商控制",
         "未给上线gate和关闭标准"
       ]
     },
@@ -3977,29 +3991,31 @@
       "category": "垂直高监管",
       "expected_risk_level": "P1",
       "mandatory_dimensions": [
-        "scope",
-        "evidence_chain",
-        "approval",
-        "data_minimization"
+        "mental_health_boundary",
+        "sensitive_personal_information",
+        "retention_access_control",
+        "qualification",
+        "crisis_response"
       ],
       "expected_issues": [
-        "来函真实性与权限核验",
-        "调取范围最小必要",
-        "个人信息/商业秘密脱敏",
-        "证据链与字段解释",
-        "审批与交付留痕"
+        "心理咨询和医疗健康服务边界",
+        "咨询记录敏感个人信息处理",
+        "保存期限、加密和访问控制",
+        "咨询师资质与未成年人保护",
+        "自伤他伤等危机干预机制"
       ],
       "required_terms": [
-        "来函真实性与权限核验",
-        "调取范围最小必要",
-        "个人信息/商业秘密脱敏",
-        "证据链与字段解释",
-        "审批与交付留痕"
+        "心理咨询",
+        "敏感个人信息",
+        "咨询记录",
+        "保存期限",
+        "访问控制",
+        "危机干预"
       ],
       "common_mistakes": [
-        "忽略交叉场景",
-        "材料不足时直接低风险",
-        "只列法规名称不解释触发事实",
+        "套用监管调证风险点",
+        "忽略心理健康服务边界",
+        "只谈保存记录不谈访问控制和危机处置",
         "未给上线gate和关闭标准"
       ]
     }

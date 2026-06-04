@@ -21,7 +21,7 @@
 
 | 能力 | 状态 | 说明 |
 |---|---|---|
-| Evaluation scoring | 部分实现 | `evaluate_outputs.py` 可做覆盖检查，但还不是完整自动化测试平台 |
+| Evaluation scoring | 部分实现 | `evaluate_outputs.py` 可做结构和关键词覆盖辅助检查，不是完整自动化测试平台，也不自动判断法律正确性 |
 | Source maintenance | 部分实现 | `SOURCE_INDEX.yaml` 已扩展，但仍需定期核验和补充行业/地方/平台规则 |
 | Company profile | 部分实现 | 提供模板和 cold-start command，但需要企业自行填入真实审批口径 |
 | GitHub Actions | 模板已提供 | workflow 模板在 `docs/github-actions/`，需复制到 `.github/workflows/` 并使用带 `workflow` scope 的 token 推送 |
